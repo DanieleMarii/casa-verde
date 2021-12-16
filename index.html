@@ -8,13 +8,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps:wght@900&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/base/base.css">
+    <link rel="stylesheet" href="assets/css/componentes/cabecalho.css">
     <link rel="stylesheet" href="assets/css/componentes/botoes.css">
     <link rel="stylesheet" href="assets/css/componentes/input.css">
     <link rel="stylesheet" href="assets/css/componentes/cartao.css">
+    <link rel="stylesheet" href="assets/css/componentes/item.css">
+    <link rel="stylesheet" href="assets/css/componentes/produto.css">
+    <link rel="stylesheet" href="assets/css/componentes/video.css">
+    
 
     <title>Home | Casa Verde</title>
 </head>
 <body>
+    <header class="container cabecalho">
+        <img src="assets/img/logo.png" alt="Logo da casa verde" class="cabecalho__logo">
+        <a href="#" aria-label="Meu carrinho de compras">
+            <img src="assets/img/icones/carrinho.svg" alt="Ícone do carrinho de compras" class="cabecalho__carrinho">
+        </a>
+    </header>
     <main class="container">
         <button class="botao">Assinar</button>
         <input class="input input--icone input--email" type="text" placeholder="Insira seu e-mail" area-label="Insira seu e-mail">
@@ -22,6 +33,38 @@
 
         <article class="cartao">
             <h2 class="titulo alinhamento--meio">Como conseguir<span class="titulo--destaque">minha planta</span></h2>
+            <ul class="lista-item">
+                <li class="item">
+                    <span class="item__icone item__icone--cursor"></span>
+                    <p>Escolha suas plantas</p>
+                </li>
+                <li class="item">
+                    <span class="item__icone item__icone--carrinho"></span>
+                    <p>Faça seu pedido</p>
+                </li>
+                <li class="item">
+                    <span class="item__icone item__icone--caminhao"></span>
+                    <p>Aguarde na sua casa</p>
+                </li>
+            </ul>
+        </article>
+        
+        <article class="produto">
+            <img src="assets/img/produto-01.png" alt="Foto do produto" class="produto__imagem">
+            <div class="produto__conteudo">
+                <h3 class="produto__titulo titulo--destaque">Ajuga reptans</h3>
+                <p class="produto__preco">R$ 20,00</p>
+                <a href="#" class="produto__comprar">Comprar<span class="produto__comprar--icone"></span></a>
+            </div>
+        </article>
+        <article class="cartao-de-video">
+            <div class="cartao-de-video__video">
+                <img src="https://picsum.photos/278/252" alt="Banner do vídeo">
+            </div>
+            <h3 class="cartao-de-video__titulo">Vídeo XYZ</h3>
+            <p>Publicado em março de 2019</p>
+        </article>
+
         </article>
     </main>
      
